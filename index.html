@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 
   <title>Amateur Code</title>
-  <meta name="description" content="Anateur Code">
+  <meta name="description" content="Amateur Code">
   <!-- <meta name="author" content="SitePoint"> -->
 
   <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
@@ -17,9 +17,73 @@
 
 <body>
 
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About</a></li>
+</ul>
+
+<h3>Caution!</h3>
+<p>
+The content found here is not created by a professional programmer with a computer science degree, or someone with any credential that would make you feel as if you have found reliable source. Nope.  Sorry, but it is very likely I know far less than you about programming.  These are just the attempts of amateur at learning something new.
+</p>
+
 <h1>Welcome to Amateur Code</h1>
-<h3>Adventures of an amateur programmer.</h3>
-<p>This site should be up and running soon.  So be sure to come back and check it out.</p>
+<h3>Adventures of an Amateur Programmer.</h3>
+
+<h1>First thing's first.</h1>
+
+<h3>Git</h3>
+<p>
+I've learned a little bit about Git, which is what I'll be using to store and share my code.  Git is a version control system that you can read about more <a href="http://git-scm.com/">here</a>.  For us amateurs, a simple illustration will show you why such a system is so important.  Let's say you are writing a book - an awesome book - and you are conflicted about how you want to end it. Does she die? Does he live? Happily ever after? Burn everything to the ground? What about the dog? After a few drinks, and a long stint of writer's block, you get home grab your laptop and the perfect ending just starts flowing out of you, almost faster than you can type it, you tweak the necessary details to tailor it perfectly, and finally your awesome book is complete.  The next morning - no, the next afternoon, when you are finally feeling up to it, you decide to review your masterpiece, only to realize it isn't exactly a masterpiece.  You've changed names, locations, and events just for the ending.  You're worse off than when you started.
+</p>
+
+<p>
+With Git, this nightmare can be avoided.  Some documents are simple and don't depend on any others.  Writing code, like writing a story, can become complex.  A change to one document can impact others.  In an effort to optimize and create more functionality, errors are often made.  The ability to retrace our steps, and maintain working historical and alternate versions of a project is invaluable.
+</p>
+
+<p>
+I won't go over the installation, you can find that <a href="http://git-scm.com/book/en/Getting-Started-Installing-Git">here</a>.
+</p>
+
+<p>
+First, I had to initiate Git in my project directory, which holds nothing but a single HTML document.  That's simple enough, just open up a terminal window, navigate to my project directory, and type in the command 'git init'.  This gave me the following response 'Initialized empty Git repository in…'	
+</p>
+
+<p>
+Next step, run 'git add .', which will stage the new file, index.html, to be committed.  Finally, I ran git commit -m 'Initial Commit' to create my first commit. The '-m' flag is for the message you want to describe your commit.
+</p>
+
+
+<h3>Github</h3>
+
+<p>
+In addition to helping an individual maintain code, Git is also very useful in allowing multiple people to collaborate on a single project, along with Github, sharing code with anyone who may be interested is very easy.
+</p>
+
+<p>
+In addition to helping an individual maintain code, Git is also very useful in allowing multiple people to collaborate on a single project, along with Github, sharing code with anyone who may be interested is very easy.
+
+<p>
+I followed the directions <a href="https://help.github.com/articles/create-a-repo">here</a> to push my local repository or repo, what the cool kids call it, to Github.  It was pretty simple, while in my local repository I ran the following:
+</p>
+
+<ol>
+	<li>git remote add origin https://github.com/AmateurCode/AmateurCode-Blog.git</li>
+	<li>git push -u origin master</li>
+</ol>
+</p>
+
+<p>
+I was prompted for my Github login credentials, and boom I have a public repository you can check out here (https://github.com/AmateurCode/AmateurCode-Blog).
+</p>
+
+<h3>Links</h3>
+
+<ul>
+	<li><a href="http://git-scm.com/book/en/Getting-Started-Installing-Git">Git Installation link</a></li>
+	<li><a href="https://help.github.com/articles/create-a-repo">Github - Get local repo online</a></li>
+	<li><a href="https://github.com/AmateurCode/AmateurCode-Blog">Amateur Code Blog Repo</a></li>
+</ul>
 
 </body>
 </html>

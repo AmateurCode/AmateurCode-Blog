@@ -9,7 +9,7 @@ angular.module('blogApp', [
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: '404.html',
+        templateUrl: 'partials/main',
         controller: 'MainCtrl'
       })
       .otherwise({

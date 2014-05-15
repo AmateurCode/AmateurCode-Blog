@@ -17,7 +17,7 @@ fs.readdirSync(modelsPath).forEach(function (file) {
 });
 
 // Populate empty DB with dummy data
-require('./lib/db/dummydata');
+require('./lib/db/posts');
 
 
 // Express Configuration
@@ -28,7 +28,7 @@ var api = require('./lib/controllers/api'),
     index = require('./lib/controllers');
 
 // Server Routes
-app.get('/api/awesomeThings', api.awesomeThings);
+app.get('/api/posts', api.posts);
 
 // Angular Routes
 app.get('/partials/*', index.partials);

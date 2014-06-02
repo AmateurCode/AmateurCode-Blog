@@ -28,7 +28,9 @@ var api = require('./lib/controllers/api'),
     index = require('./lib/controllers');
 
 // Server Routes
-app.get('/api/posts', api.posts);
+app.get('/post/:postId', api.post);
+app.get('/posts', api.posts);
+app.post('/relatedposts', api.relatedPosts);
 
 // Angular Routes
 app.get('/partials/*', index.partials);
